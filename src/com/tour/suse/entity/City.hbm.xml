@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tour.suse.entity" >
+
+	<class name="City" table="City" >
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="name" />
+		<!-- scenices属性， 本类与Scenic的一对多 -->
+		<set name="scenices" cascade="all">
+			<key column="cityId"></key>
+			<one-to-many class="Scenic"/>
+		</set>
+		
+	</class>
+
+</hibernate-mapping>

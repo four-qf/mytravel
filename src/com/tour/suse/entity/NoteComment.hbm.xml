@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tour.suse.entity" >
+
+	<class name="NoteComment" table="NoteComment" >
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="content" length="300"/>
+		<property name="postTime" />
+		
+		<!-- note属性，本类与Note的多对一 -->
+		<many-to-one name="note"  class="Note" column="noteId" />
+		<!-- author属性，本类User的多对一 -->
+		<many-to-one name="author"   class="User" column="authorId" />
+		<!-- noteReplies属性，本类与NoteReply一对多 -->
+		<set name="noteReplies">
+			<key column="noteCommentId"></key><!-- 外键 -->
+			<one-to-many class="NoteReply"/>
+		</set>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,197 @@
+*{padding: 0px;margin: 0px;list-style: none;}
+.topline{width: auto;min-width: 1000px;height: 20px;margin-top: 10px;background-image: url("../formerImage/footerTopLineImage.png");}
+/*景点查询页面--main层*/
+#queMain{width: 1000px;margin: 0 auto;}
+.queTop{width: 703px;height: 60px;margin-top: -15px;margin-bottom: 5px;background-image: url("../formerImage/queTop.png");}
+/*景点查询页面--搜索条件栏*/
+.queSch{width: 1000px;border-bottom: 1px solid #ebebeb;}
+.queSch .schLeft{float: left;width: 100px;height: 34px;text-align: right;line-height: 34px;color: #666666;font-size: 12px;}
+.queSch ul{float: left;width: 880px;color: #666666;font-size: 12px;text-align: left;padding-top: 7px;margin-left: 20px;}
+.queSch ul li{float: left;min-width: 120px;height: 20px;padding-left: 5px;cursor: pointer;margin-bottom: 7px;margin-right: 30px;line-height: 20px;position: relative;}
+.queSch ul li:hover{background: rgb(77,174,221);color: #FFF;}
+.queSch ul li:hover div{background-image: url("../formerImage/select1.png");}
+.queSch ul li.schLi{background: rgb(77,174,221);color: #FFF;}
+.queSch ul span{padding-right: 7px;}
+.queSch ul div{float: right;width: 12px;height: 12px;margin-top: 4px;margin-right: 5px;}
+.queSch ul div.schDiv{background-image: url("../formerImage/select1.png");}
+.queSch ul li:hover .smallSch{display: block;}
+.smallSch{position: absolute;width: 280px;background: #FFF;cursor: auto;border: 1px solid #ebebeb;border-top: none;display: none;z-index: 999;}
+.smallSch dd{float: left;margin-left: 10px;margin-top: 5px;margin-bottom: 5px;}
+.smallSch dd.schPoi{position: absolute;width: 20px;height: 10px;margin: 0px;background: url("../formerImage/2.png");left: 130px;}
+.smallSch dd.line{float: left;width: 280px;height: 8px;margin: 0px;border: 1px solid #FFF;border-bottom: 2px solid rgb(77,174,221);margin-left: -1px;}
+.smallSch dd a{float: left;width: 10px;height: 10px;border: 1px solid rgb(77,174,221);display: block;margin-top: 4px;}
+.smallSch dd a.smallA{border: none;width: 12px;height: 12px;background-image: url("../formerImage/select1.png");}
+.smallSch dd span.smaSpan{float: left;width: 108px;height: 20px;display: block;padding-right: 0px;margin-left: 10px;color: #666666;line-height: 20px;}
+/*景点查询页面--已选条件栏*/
+.queSel{position: relative;width: 1000px;min-height: 34px;border-top: 2px solid #ebebeb;}
+.queSel .name{position: absolute;width: 100px;height: 34px;border-top: 2px solid rgb(77,174,221);margin-top: -2px;color: #666666;font-size: 12px;line-height: 34px;text-align: right;}
+.queSel .clear{position: absolute;width: 80px;height: 34px;margin-left: 920px;border-bottom: 1px solid rgb(77,174,221);bottom: 0px;}
+.queSel .clear a{width: 60px;height: 22px;margin-top: 6px;display: inline-block;background: #95E1CD;margin-left: 10px;line-height: 22px;text-align: center;cursor: pointer;color: #FFF;font-size: 12px;}
+.queSel ul{position: relative;min-height: 28px;width: 820px;padding-top: 6px;border-bottom: 1px solid rgb(77,174,221);overflow: hidden;margin-left: 100px;}
+.queSel ul li{float: left;height: 20px;margin-bottom: 6px;font-size: 12px;line-height: 20px;color: rgb(77,174,221);padding-left: 5px;border: 1px solid rgb(77,174,221);margin-left: 20px;}
+.queSel ul span{padding-right: 7px;}
+.queSel ul div{float: right;width: 12px;height: 12px;margin-top: 4px;margin-right: 5px;background-image: url("../formerImage/cancle.png");cursor: pointer;}
+.line{width: 1000px;border-top: 1px solid #ebebeb;margin-top: -1px;}
+/*景点查询页面--热门景点*/
+.queHot{float: left;width: 235px;height: 1420px;margin-right: 20px;background-image: url("../formerImage/queHot.png");margin-top: 40px;margin-bottom: 30px;}
+.queHot .hotName{width: 215px;height: 50px;line-height: 50px;color: #999;font-weight: bold;margin-left: 11px;}
+.queHot dl{padding-left: 11px;}
+.queHot dd{float: left;width: 211px;height: 138px;margin-right: 11px;margin-bottom: 14px;background-image: url("../formerImage/queHot3.png");}
+.queHot dd img{width: 211px;height: 106px;border: none;}
+.queHot .imgName{width: 211px;height: 25px;line-height: 25px;text-align: center;font-size: 16px;color: #888;margin-top: 2px;}
+.queHot .imgName a{text-decoration: none;font-size: 16px;color: #888;}
+.queHot span{display: none;}
+/*景点查询页面--预览图*/
+ul#queBkgrd{float: left;width: 745px;margin-top: 40px;overflow: hidden;}
+ul#queBkgrd li{position: relative;float: left;width: 235px;height: 320px;margin-right: 20px;margin-bottom: 20px;}
+.curHot{position: absolute;width: 422px;left: 0px;top: 0px;padding: 5px;border: 1px solid #CCC;background: #FFF;display: none;overflow: auto;}
+.curHot img{width: 422px;height: 212px;}
+.curHot .curName{width: 422px;height: 20px;line-height: 20px;color: #999;font-weight: bold;}
+.curHot .curText{width: 422px;max-height: 60px;line-height: 20px;color: #999;font-size: 12px;text-indent: 2em;}
+ul#queBkgrd img{width: 235px;height: 130px;border: none;display: block;}
+ul#queBkgrd .queCon{width: 233px;height: 190px;border: 1px dotted #CCC;border-top: none;background: #FFF;}
+ul#queBkgrd .queCon:hover{border: 1px dotted #4DAEDD;border-top: none;}
+ul#queBkgrd .queCon:hover div{background-image: url("../formerImage/obLineBg2.png");}
+ul#queBkgrd .queLiBk{width: 233px;height: 10px;background-image: url("../formerImage/obLineBg1.png");}
+.queCon a{display: inline-block;margin-left: 15px;text-decoration: none;font-size: 12px;line-height: 18px;}
+.queCon a.spotName{position: relative;height: 22px;line-height: 22px;font-size: 22px;font-weight: bold;margin-bottom: 19px;color: #999;margin-top: 19px;}
+.queCon span.spotText{width: 205px;height: 72px;text-indent: 2em;overflow: hidden;color: #888;line-height: 20px;font-size: 12px;}
+.queCon a.spotPal{height: 18px;margin-top: 15px;color: #4DAEDD;}
+/*景点查询页面--点击显示更多*/
+.queMore{position: relative;width: 743px;height: 60px;border: 1px solid #BABABA;background: #F5F5F5;margin-bottom: 30px;margin-left: 255px;margin-top: -60px;}
+.queMore .queGet{width: 205px;height: 60px;margin: 0 auto;text-align: center;}
+.queMore img{float: left;border: none;margin-top: 12px;width: 40px;height: 35px;}
+.queMore a{float: left;text-decoration: none;line-height: 60px;color: #999999;font-size: 20px;font-weight: bold;
+}
+/*景点景区详情页面--main层*/
+#detMain{width: 1000px;margin: 0 auto;padding-bottom: 30px;}
+/*景点景区详情页面--顶部图片预览*/
+#detMain .detImg{width: 1000px;height: 440px;background-image: url("../formerImage/detImg.png");margin-bottom: 30px;}
+.detImg .detName{width: 970px;height: 60px;margin-left: 30px;line-height: 60px;color: #999;font-size: 20px;}
+
+.detName .rightName{
+	float: right;
+	line-height: 85px;color: #999;font-size: 12px;
+	height: 60px;
+	margin-right: 50px;
+}
+
+
+
+.detImg .largeImg{float: left;width: 540px;height: 340px;border: none;margin-left: 30px;}
+.detImg .largeImg img{position: absolute;width: 540px;height: 340px;border: none;display: block;}
+.detImg .smallImg{float: left;width: 390px;height: 340px;margin-left: 20px;}
+.smallImg .leftRet{float: left;width: 30px;height: 60px;margin-top: 140px;background-image: url("../formerImage/turnLeftImage.png");cursor: pointer;opacity: 0.5;filter:alpha(opacity=50);}
+.smallImg .rightRet{float: left;width: 30px;height: 60px;margin-top: 140px;background-image: url("../formerImage/turnRightImage.png");cursor: pointer;opacity: 0.5;filter:alpha(opacity=50);}
+.smallImg .ulDiv{position: relative;float: left;width: 330px;height: 340px;overflow: hidden;}
+.smallImg ul{position: absolute;width: 330px;height: 340px;left: 0px;}
+.smallImg ul li{position: absolute;width: 155px;height: 106px;margin-bottom: 11px;background: #FFF;}
+.smallImg ul li img{width: 141px;height: 92px;padding: 3px;border: 4px solid #f1f1f1;cursor: pointer;}
+.smallImg ul li img:hover{border: 4px solid #ABCDEF;}
+/*景点景区详情页面--左下角内容*/
+#detMain .detCon{float: left;width: 698px;border: 1px solid #BABABA;padding-bottom: 30px;margin-right: 20px;}
+.detCon ul.topSel{width: 698px;height: 70px;margin-top: -16px;margin-bottom: 20px;}
+ul.topSel li{float: left;width: 140px;height: 70px;background-image: url("../formerImage/topLiBg.png");}
+ul.topSel li.curSel{background-image: url("../formerImage/topLiBg2.png");}
+ul.topSel li div{width: 90px;text-align: center;margin-left: auto;margin-right: auto;margin-top: 25px;font-size: 14px;color: #999;font-weight: bold;cursor: pointer;letter-spacing: 2px;}
+ul.topSel li.curSel div{color: #FFF;}
+/*景点景区详情页面--左下角内容--景区介绍*/
+.detCon .detText{width: 638px;margin-left: 30px;color: #999;font-size: 12px;line-height: 20px;}
+/*景点景区详情页面--左下角内容--交通线路*/
+.detCon .detTra{width: 638px;margin-left: 30px;color: #999;font-size: 12px;line-height: 20px;display: none;}
+/*景点景区详情页面--左下角内容--驴友点评*/
+.detCon .detCom{width: 638px;margin-left: 30px;display: none;}
+.detCom .comSel{	width: 638px;height: 40px;border-bottom: 2px solid rgb(186,186,186);}
+.comSel li{float: left;width: 100px;height: 40px;line-height: 40px;text-align: center;font-size: 16px;color: #999;font-weight: bold;cursor: pointer;}
+.comSel li.selCur{color: rgb(248,101,172);border-bottom: 2px solid rgb(248,101,172);}
+.detCom .comCon{width: 638px;}
+.detCom .comCon ul{width: 638px;}
+.comCon li{margin-top: 20px;width: 638px;padding-bottom: 20px;border-bottom: 1px solid rgb(222,222,222);}
+.comCon .conLeft{float: left;width: 100px;}
+.comCon .conLeft img{width: 50px;height: 50px;padding: 1px;border: 2px solid #f1f1f1;margin-left: 18px;}
+.comCon .conLeft .leftName{width: 100px;font-size: 12px;color: #999;text-align: center;margin-top: 5px;}
+.comCon .conRight{float: left;width: 520px;margin-left: 18px;}
+.conRight .score{width: 520px;height: 24px;}
+.score dd{float: left;font-size: 12px;color: #999;line-height: 27px;border: none;padding: none;margin-right: 10px;height: 24px;}
+.score dd.totSco{line-height: 24px;font-weight: bold;}
+.score dd img{float: right;width: 100px;height: 24px;border: none;}
+.score dd span{color: rgb(248,101,172);font-weight: bold;}
+.conRight .textCon{width: 520px;font-size: 12px;color: #999;line-height: 20px;text-indent: 2em;margin-top: 10px;}
+.detCom .comCon .conGet{width: 80px;height: 30px;background: rgb(248,101,172);color: #FFF;text-align: center;line-height: 30px;font-size: 14px;margin-top: 0px;margin-left: 558px;cursor: pointer;display: none;}
+/*景点景区详情页面--左下角内容--我要评价*/
+.detCom .myCom{width: 638px;margin-top: 20px;display: none;}
+.myCom ul.selGo{width: 520px;height: 20px;margin-left: 159px;}
+.myCom ul li{float: left;width: 80px;height: 20px;}
+.myCom ul li a{width: 10px;height: 10px;border: 1px solid #999;display: block;float: left;margin-top: 4px;margin-right: 5px;}
+.myCom ul li span{line-height: 20px;font-size: 12px;color: #999;}
+.myCom ul li a.spaSel{border: none;width: 12px;height: 12px;background-image: url("../formerImage/spaSel.png");}
+.myCom .mySoce{width: 638px;height: 74px;}
+.myCom .mySoce .myLeft{float: left;width: 180px;height: 74px;}
+.myCom .mySoce span{width: 160px;height: 50px;line-height: 50px;color: rgb(248,101,172);display: block;font-size: 32px;font-weight: bold;text-align: right;padding-right: 18px;letter-spacing: 3px;}
+.myCom .mySoce div{float: left;width: 78px;height: 24px;line-height: 24px;color: #999;font-size: 14px;}
+.myCom .mySoce dl{float: left;width: 100px;height: 24px;background-image: url("../formerImage/star0.png");}
+.myCom .mySoce dl.star1{background-image: url("../formerImage/star1.png");}
+.myCom .mySoce dl.star2{background-image: url("../formerImage/star2.png");}
+.myCom .mySoce dl.star3{background-image: url("../formerImage/star3.png");}
+.myCom .mySoce dl.star4{background-image: url("../formerImage/star4.png");}
+.myCom .mySoce dl.star5{background-image: url("../formerImage/star5.png");}
+.myCom .mySoce dd{float: left;width: 14px;height: 14px;margin-left: 5px;margin-top: 5px;cursor: pointer;}
+.myCom .mySoce ul{float: left;width: 458px;height: 74px;}
+.myCom .mySoce ul li{float: left;width: 140px;height: 24px;margin-top: 13px;margin-left: 20px;margin-right: 45px;line-height: 24px;color: #999;font-size: 12px;}
+.myCom .mySoce ul li dl{float: right;}
+.myCom .leftName{float: left;width: 80px;height: 24px;line-height: 24px;color: #999;font-size: 14px;margin-top: 15px;}
+.myCom .rightTxet{float: left;width: 548px;height: 150px;margin-top: 20px;resize: none;}
+.myCom .retext{float: left;width: 200px;height: 30px;color: #999;text-align: left;line-height: 30px;font-size: 12px;margin-left: 80px;}
+.myCom .myQue{float: left;margin-left: 550px;width: 78px;height: 30px;color: #999;text-align: center;line-height: 28px;font-size: 14px;margin-top: -30px;cursor: pointer;outline: none;border: 1px solid #999;background: #FFF;clear:both;}
+.myCom .myQueCk{width: 80px;height: 30px;line-height: 30px;background: rgb(248,101,172);color: #FFF;border: none;}
+/*景点景区详情页面--左下角内容--景点游记*/
+.detCon .detRela{width: 638px;margin-left: 30px;display: none;}
+.detRela ul{width: 638px;}
+.detRela ul li{width: 638px;border-bottom: 1px solid rgb(222,222,222);overflow: hidden;padding-bottom: 10px;padding-top: 10px;}
+.detRela ul li a{float: left;}
+.detRela ul li img{width: 130px;height: 80px;margin-right: 10px;}
+.detRela ul li a.relaTop{float: left;line-height: 20px;color: #999;font-size: 14px;font-weight: bold;text-decoration: none;}
+.detRela ul li a.relaTop:hover{color: rgb(248,101,172);}
+.detRela ul li .releCon{float: left;width: 498px;height: 34px;text-indent: 2em;font-size: 12px;line-height: 16px;color: #999;margin-top: 6px;}
+.detRela ul li .releTxet{float: left;width: 498px;height: 16px;font-size: 12px;line-height: 16px;color: #999;margin-top: 4px;}
+.detRela ul li .releTxet img{float: left;width: 16px;height: 16px;margin-right: 5px;}
+.detRela ul li .releTxet span{float: right;}
+.detRela .relaGet{width: 80px;height: 30px;background: rgb(248,101,172);color: #FFF;text-align: center;line-height: 30px;font-size: 14px;margin-top: 0px;margin-left: 558px;cursor: pointer;display: none;}
+/*景点景区详情页面--右下角内容*/
+#detMain .detRight{float: left;width: 280px;}
+.detRight .rightMou{width: 280px;margin-bottom: 40px;overflow: hidden;background-image: url("../formerImage/rightMou.png");background-repeat: no-repeat;}
+.rightMou .rightName{float: left;height: 30px;line-height: 30px;color: #999;font-size: 16px;font-weight: bold;background: #FFF;padding-right: 20px;}
+.rightSco{float: left;width: 120px;height: 96px;margin-top: 10px;}
+.rightSco span{width: 120px;height: 50px;line-height: 50px;color: rgb(248,101,172);display: block;font-size: 32px;font-weight: bold;text-align: right;text-align: center;margin-top: 11px;}
+.rightSco img{width: 100px;height: 24px;margin-left: 10px;}
+ul.rightCom{float: left;width: 136px;height: 96px;margin-left: 10px;margin-top: 16px;}
+ul.rightCom li{width: 140px;height: 24px;line-height: 24px;color: #999;font-size: 12px;}
+ul.rightCom li img{width: 100px;height: 24px;float: right;}
+ul.rightSuo{width: 280px;margin-top: 15px;}
+ul.rightSuo li{width: 280px;height: 80px;border-bottom: 1px dashed #f4f4f4;padding-bottom: 10px;margin-top: 10px;}
+ul.rightSuo li img{float: left;width: 120px;height: 80px;border: none;margin-right: 10px;}
+ul.rightSuo li a{float: left;color: #999;text-decoration: none;font-size: 12px;line-height: 20px;font-weight: bold;}
+ul.rightSuo li a:hover{color: #4daedd;}
+ul.rightSuo li .suoNei{float: left;width: 150px;height: 60px;font-size: 12px;text-indent: 2em;color: #999;line-height: 15px;}
+/*底部导航栏*/
+#botNav{width: 100%;min-width: 1000px;height: 50px;position: fixed;bottom: 0px;background: #FFF;display: none;}
+#botNav .bgDiv{width: 515px;height: 30px;margin: 0 auto;padding-top: 10px;padding-bottom: 10px;}
+#botNav ul{float: left;width: 220px;height: 30px;margin: 0 auto;overflow: hidden;}
+#botNav ul li{position: relative;float: left;width: 110px;height: 30px;text-align: center;line-height: 30px;font-size: 14px;color: #4daedd;font-weight: bold;cursor: pointer;}
+#botNav ul li:hover{color: rgb(248,101,172);}
+#botNav dl{float: left;width: 55px;height: 30px;cursor: pointer;padding-left: 10px;padding-right: 10px;padding-top: 5px;}
+#botNav dd{width: 55px;height: 4px;background: #4daedd;}
+
+
+/*点击登陆按钮*/
+#cliLogin{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	color: rgb(153,153,153);
+}
+
+#cliLoBt{
+	float: left;
+width: 80px;height: 30px;background: rgb(248,101,172);color: #FFF;text-align: center;line-height: 30px;font-size: 14px;margin-top: 0px;margin-left: 20px;cursor: pointer;
+}

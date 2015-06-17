@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.configuration.xml.reload" value="true" />
+	 <constant name="struts.multipart.maxSize" value="10701096"/>
+	<package name="note" namespace="/note" extends="json-default">
+	
+		<interceptors>
+			<interceptor name="checkpriv" class="com.tour.suse.interceptor.CheckPrivilegeInterceptor" />
+			<interceptor-stack name="defaultStack">
+				<interceptor-ref name="checkpriv" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<global-results>
+			<result name="noPrivilegeError">/noPrivilegeError.jsp</result>
+			<result name="loginUI">/loginUI.jsp</result>
+			<result name="managerLogin" type="redirect">/WEB-INF/jsp/login.jsp</result>
+		</global-results>
+		
+		<action name="note_*" class="noteAction" method="{1}">
+			<result name="toList" type="redirect">note_list</result>
+			<result name="list">/WEB-INF/jsp/noteAction/list.jsp</result>
+			<result name="list2" >/WEB-INF/jsp/noteAction/list2.jsp</result>
+		</action>
+		
+		
+	</package>
+</struts>

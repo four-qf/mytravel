@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.multipart.maxSize" value="104857600" /><!-- 100M -->
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<constant name="struts.action.extension" value="action"/>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+	<include file="struts-manager.xml" />
+	<include file="struts-scenic.xml" />
+	<include file="struts-note.xml" />
+	<include file="struts-fileup.xml" />
+	<include file="struts-news.xml"/>
+	<package name="defaults" namespace="/" extends="struts-default">
+		<interceptors>
+			<interceptor name="checkpriv" class="com.tour.suse.interceptor.CheckPrivilegeInterceptor2" />
+			<interceptor-stack name="defaultStack">
+				<interceptor-ref name="checkpriv" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+			<interceptor-stack name="sshStack">
+				<interceptor-ref name="paramsPrepareParamsStack">
+					<param name="prepare.alwaysInvokePrepare">false</param>
+				</interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		
+		<global-results>
+			<result name="loginUI">/loginUI.jsp</result>
+		</global-results>
+		<!-- 首页处理 -->
+		<action name="index" class="IndexAction" method="index">
+			<result name="success">/index.jsp</result>
+		</action>
+		<!-- 用户注册、登录 -->
+		<action name="frontUser_*"  class="com.tour.suse.action.UserAction" method="{1}">
+			<result name="registerUI">/registerUI.jsp</result>
+			<result name="loginUI">/loginUI.jsp</result>
+			<result name="toPersonArea" type="redirectAction">user_personArea.action</result>
+			<result name="findPersonInfo">/otherPersonInfo.jsp</result>
+		</action>
+		<!-- 用户登录后 -->
+		<action name="user_*"  class="com.tour.suse.action.UserAction" method="{1}">
+			<result name="personArea">/personalArea.jsp</result>
+			<result name="personInfoUI2">/personInfo.jsp</result>
+			<result name="pI2UUI">/personInfoUpdate.jsp</result>
+		</action>
+		
+		<!-- 评论图片验证码 -->
+		<action name="scencomenCode" class="scenicCommentAction" method="code">
+			<result type="stream" name="code">
+				imageStream
+			</result>
+		</action>
+		
+	<!-- 游记开始 -->
+	<action name="frontnote_*" class="noteAction" method="{1}">
+			<result name="addUI">/tourpalPublic.jsp</result>
+			<result name="userlist">/tourpalPersonalFind.jsp</result>
+			<result name="add" type="redirect">frontnote_userlist.action</result>
+			<result name="detail">/tourpalDetails.jsp</result>
+			<result name="search">/tourpalList.jsp</result>
+			<result name="edit" type="redirect">frontnote_detail.action?model.id=${model.id}</result>
+			<result name="editUI">/tourpalEditUI.jsp</result>
+			<result name="toEditUI" type="redirect">frontnote_editUI?model.id=${id}</result>
+			<result name="input" type="redirect">/error.jsp</result>
+			<result name="listall">/tourpalFind.jsp</result>
+		</action>
+		<action name="notecomment_*" class="noteCommentAction" method="{1}">
+			<result name="add" type="redirect">frontnote_detail.action?model.id=${NoteId}</result>
+			<result name="addUI" type="redirect">frontnote_detail.action?model.id=${NoteId}</result>
+		</action>
+		<action name="notereply_*" class="noteReplyAction" method="{1}">
+			<result name="add" type="redirect">frontnote_detail.action?model.id=${comment.note.id}</result>
+		</action>	
+	<!-- 游记结束 -->
+	
+		<!-- 景区可见 -->
+			<action name="frontscenic_*" class="scenicAction" method="{1}">
+			<result name="toList" type="redirectAction">frontscenic_list</result>
+			<result name="list">/scenicSearch.jsp</result>
+			<result name="detailScenic">/scenicDetails.jsp</result>
+			<result name="input" type="redirectAction">frontscenic_list</result>
+		</action>
+		<action name="frontscenicComment_*" class="scenicCommentAction" method="{1}">
+			<result name="toDetailScenic" type="redirect">frontscenic_detailScenic?model.id=${scenicId}</result>
+		</action>
+	<!-- 新闻中心 -->	
+		<action name="frontnews_*" class="com.tour.suse.news.action.NewsAction" method="{1}">
+			<interceptor-ref name="sshStack"></interceptor-ref>
+			<result name="list">frontnews_newslist.jsp</result>
+			<result name="shownews">frontnews_shownews.jsp</result>
+			<result name="success" type="stream">
+				<param name="contentType">text/plain</param>
+				<param name="contentDisposition">attachment;fileName=${fileName}</param>
+				<param name="inputName">inputStream</param>
+				<param name="bufferSize">1024</param>
+			</result>
+		</action>
+		
+	</package>
+</struts>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.configuration.xml.reload" value="true" />
+
+	<package name="manager" namespace="/manager" extends="json-default">
+		<interceptors>
+			<interceptor name="checkpriv" class="com.tour.suse.interceptor.CheckPrivilegeInterceptor" />
+			<interceptor-stack name="defaultStack">
+				<interceptor-ref name="checkpriv" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		
+		<global-results>
+			<result name="noPrivilegeError">/noPrivilegeError.jsp</result>
+			<result name="managerLogin" type="redirect">/WEB-INF/jsp/login.jsp</result>
+		</global-results>
+
+		<!-- 祝晓添加 -->
+		<!-- 权限管理 -->
+    	<action name="role_*" class="roleAction" method="{1}">
+    		<result name="toList" type="redirectAction">role_list.action</result>
+    		<result name="saveUI">/WEB-INF/jsp/roleAction/saveUI.jsp</result>
+    		<result name="list">/WEB-INF/jsp/roleAction/list.jsp</result>
+    		<result name="setPrivilegeUI">/WEB-INF/jsp/roleAction/setPrivilegeUI.jsp</result>
+    	</action>
+		<!-- 用户action-->
+		<action name="user_*" class="userAction" method="{1}">
+			<result name="toAdminList" type="redirectAction">user_adminList.action</result>
+			<result name="userList">/WEB-INF/jsp/userAction/userList.jsp</result>
+			<result name="adminList">/WEB-INF/jsp/userAction/list.jsp</result>
+			<result name="htLoginUI">/WEB-INF/jsp/login.jsp</result>
+			<!-- 后台首页 -->
+			<result name="htIndexUI">/WEB-INF/jsp/index.jsp</result>
+			<result name="toHtIndexUI" type="redirectAction">user_htIndexUI.action</result>
+			<result name="updatePwUI">/WEB-INF/jsp/userAction/updatePwUI.jsp</result>
+			<result name="topersonInfoUI" type="redirectAction">user_personInfoUI.action</result>
+			<result name="personInfoUI">/WEB-INF/jsp/userAction/adminInfo.jsp</result>
+			<result name="addAdminUI">/WEB-INF/jsp/userAction/addAdminUI.jsp</result>
+			<result type="stream" name="code">
+				<param name="inputName">imageStream</param>
+			</result>
+		</action>
+	</package>
+</struts>

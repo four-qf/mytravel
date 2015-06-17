@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tour.suse.entity" >
+	<class name="Note" table="Note" >
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="title" />
+		<property name="goodNum" />
+		<property name="badNum" />
+		<property name="imageUrl" />
+		<property name="content" length="300"/>
+		<property name="postTime" />
+		<property name="clickNum" />
+		<property name="commentNum" />
+		<property name="delUsername" />
+		<property name="status" type="integer" not-null="true" />
+		<!-- scenic属性，本类Scenic的多对一 -->
+		<many-to-one name="scenic"   class="Scenic" column="scenicId" />
+		
+		<!-- author属性，本类User的多对一 -->
+		<many-to-one name="author"   class="User" column="userId"  lazy="false"/>
+		<!-- noteComments属性，本类与NoteComment一对多 -->
+		<set name="noteComments">
+			<key column="noteId"></key><!-- 外键 -->
+			<one-to-many class="NoteComment"/>
+		</set>
+	</class>
+</hibernate-mapping>

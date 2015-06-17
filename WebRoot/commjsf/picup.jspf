@@ -1,0 +1,27 @@
+	<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<script type="text/javascript" src="noteScript/xheditor/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="noteScript/xheditor/xheditor-1.2.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="noteScript/xheditor/xheditor_lang/zh-cn.js"></script>
+<script type="text/javascript">
+var pictime 
+	$(function() {
+		pictime= new Date().valueOf();//获取原始的时间值
+		var tools = "Cut,Copy,Paste,Pastetext,Separator,";
+		tools += "Blocktag,Fontface,FontSize,Bold,Italic,Underline,Strikethrough,FontColor,BackColor,SelectAll,Removeformat,Separator,";
+		tools += "Align,List,Outdent,Indent,Separator,";
+		tools += "Link,Unlink,Img,Table,Code,Separator,";
+		tools += "Emot,Source,Fullscreen,About";
+		$('#xhecontent').xheditor( {
+			tools : tools, //也可自定义tools,这里为full 
+			upMultiple:3,
+			html5Upload : false, //此属性必须为false 否则无法上传图片
+			upImgUrl : "noteImgUp/"+pictime+".html",
+			onUpload : insertUpload
+		});
+		function insertUpload(data) {
+			alert(data);
+		}
+	})
+</script>

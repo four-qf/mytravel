@@ -1,0 +1,35 @@
+body {margin:0px;word-break:break-all;background-color:#Ffffff;color:#333;font-size:13px;line-height:120%;margin-left:auto;margin-right:auto;width:100%;}
+a {color:#333;margin:2px;text-decoration:none;}
+a:hover {color:red;text-decoration:none;}
+.css_table {background-color:#D1EAAC;width:100%;}
+.css_menu {background:url(f_bg.gif);height:28px;}
+.css_main {text-align:left;}
+.css_main_table {width:100%;}
+.css_main_table a {color:#638D23;font-size:14px;font-weight:700;text-decoration:none;}
+.css_main_table a:hover {text-decoration:none;}
+.css_search {text-align:right;}
+.css_top {background-color:#F0F9E3;border-left:1px solid #FFF;border-top:1px solid #FFF;color:#7F7F7F;font-size:13px;font-weight:700;height:30px;letter-spacing:1px;padding:0px;text-align:center;}
+.css_top a {color:#7F7F7F;font-size:13px;font-weight:700;letter-spacing:1px;text-decoration:none;}
+.css_top a:hover {color:#7F7F7F;font-size:13px;font-weight:700;letter-spacing:1px;text-decoration:underline;}
+.css_list {background-color:#FFFFFF;height:25px;text-align:center;}
+.css_list input { background-color:#F8FCF1; border:1px solid #67981F; color:#476815; font-size:13px; line-height:100%; margin-top: 0; margin-right: 0px; margin-bottom: 0; margin-left: 0px; padding-top: 3px; padding-right: 0; padding-bottom: 0; padding-left: 0px; }
+.css_list .checkbox{margin: 0px;padding: 0px;border-style: none;}
+.css_norecord {background-color:#FBFBFB;color:red;font-size:14px;height:26px;text-align:center;}
+.css_page_list {background-color:#F0F9E3;height:30px;text-align:center;}
+.css_page_list input.inputs{background-color:#F8FCF1;border:1px solid #67981F;color:#476815;font-size:11px;line-height:100%;margin:auto;padding:3px 0 0 1px;}
+.css_page_list select{font-size:10px;color:#666;}
+.css_page_list a {background-color:#F9f9f9;border:1px solid #777;color:#666;font-size:13px;padding-left:4px;padding-right:4px;padding-top:2px;text-decoration:none;}
+.css_page_list a:hover {background-color:#FEE;border:1px solid red;color:red;text-decoration:none;}
+.css_page_list a.pagein {background-color:#FEE;border:1px solid red;color:red;font-size:13px;padding-left:4px;padding-right:4px;padding-top:2px;text-decoration:none;}
+.css_col11 {background-color:#ffffff;border-left:1px solid #FFF;border-top:1px solid #FFF;color:#666;font-size:13px;height:25px;padding:4px;text-align:left;width:280px;}
+.css_col11_content {background-color:#ffffff;border-left:1px solid #FFF;border-top:1px solid #FFF;color:#666;font-size:13px;height:25px;padding:4px;text-align:left;width:100px;}
+.css_col21 {background-color:#ffffff;border-left:1px solid #FFF;border-top:1px solid #FFF;height:25px;padding:4px;text-align:left;}
+.css_col12 {background-color:#ffffff;border-left:1px solid #FFF;border-top:1px solid #FFF;color:#666;font-size:13px;height:25px;padding:4px;width:280px;}
+.css_col12_content {background-color:#F0F8E4;border-left:1px solid #FFF;border-top:1px solid #FFF;color:#666;font-size:13px;height:25px;padding:4px;width:100px;}
+.css_col22 {background-color:#ffffff;border-left:1px solid #FFF;border-top:1px solid #FFF;height:25px;padding:4px;text-align:left;}
+.css_input_del {width:90%;}
+.css_textarea_del {height:100px;width:90%;}
+.css_select_del {width:91%;}
+.css_comment_list {background-color:#f4f4f4;color:#666;font-size:12px;text-align:left;}
+.css_norecord td,.css_page_list td {border-left:1px solid #FFF;border-top:1px solid #FFF;}
+.ajax_input{background-color:#F8FCF1;border:1px solid #67981F;color:#476815;font-size:13px;line-height:100%;margin:auto;padding:3px 0 0 1px;}

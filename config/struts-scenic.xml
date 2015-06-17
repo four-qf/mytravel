@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.ui.theme" value="simple" />
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.configuration.xml.reload" value="true" />
+	<package name="scenic" namespace="/scenic" extends="json-default">
+		<interceptors>
+			<interceptor name="checkpriv" class="com.tour.suse.interceptor.CheckPrivilegeInterceptor" />
+			<interceptor-stack name="defaultStack">
+				<interceptor-ref name="checkpriv" />
+				<interceptor-ref name="defaultStack" />
+			</interceptor-stack>
+		</interceptors>
+		<global-results>
+			<result name="loginUI">/WEB-INF/jsp/login.jsp</result>
+			<result name="noPrivilegeError">//WEB-INF/jsp/login.jsp</result>
+			<result name="managerLogin" type="redirect">/WEB-INF/jsp/login.jsp</result>
+		</global-results>
+		
+		<action name="scenic_*" class="scenicAction" method="{1}">
+			<result name="toList" type="redirectAction">scenic_list.action</result>
+			<result name="saveUI">/WEB-INF/jsp/scenicAction/saveUI.jsp</result>
+			<result name="list">/WEB-INF/jsp/scenicAction/list.jsp</result>
+			<result name="list2">/WEB-INF/jsp/scenicAction/list2.jsp</result>
+			<result name="input">/WEB-INF/jsp/scenicAction/saveUI.jsp</result>
+		</action>
+		
+		
+		<action name="subscenic_*" class="subScenicAction" method="{1}">
+			<result name="list" >/WEB-INF/jsp/scenicAction/list3.jsp</result>
+		</action>
+		
+		
+		
+		<!-- -评论管理 -->
+		<action name="scenicComment_*" class="scenicCommentAction" method="{1}">
+			<result name="list" >/WEB-INF/jsp/scenicAction/CommMange.jsp?scenicId=${scenicId}</result>
+		</action>
+		
+	</package>
+</struts>

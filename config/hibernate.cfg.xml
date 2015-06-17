@@ -1,0 +1,20 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+<session-factory>
+	<!-- 3.导入映射文件 -->
+	<mapping resource="com/tour/suse/entity/Note.hbm.xml" />
+	<mapping resource="com/tour/suse/entity/NoteComment.hbm.xml" />
+	<mapping resource="com/tour/suse/entity/NoteReply.hbm.xml" />
+	<mapping resource="com/tour/suse/entity/Scenic.hbm.xml" />
+	<mapping resource="com/tour/suse/entity/ScenicClass.hbm.xml" />
+	<mapping resource="com/tour/suse/entity/ScenicComment.hbm.xml" />
+	<mapping resource="com/tour/suse/entity/SubScenic.hbm.xml" />
+	<mapping resource="com/tour/suse/entity/City.hbm.xml" />
+	<mapping resource="com/tour/suse/entity/Role.hbm.xml" />
+	<mapping resource="com/tour/suse/entity/Privilege.hbm.xml" />
+	<mapping resource="com/tour/suse/entity/User.hbm.xml" />
+	<mapping class="com.tour.suse.news.entity.News" />
+</session-factory>
+</hibernate-configuration>

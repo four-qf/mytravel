@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tour.suse.entity" >
+
+	<class name="SubScenic" table="SubScenic" >
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="name" length="20" />
+		<property name="subScenicClass" length="300" />
+		<property name="imageUrl" length="65532" />
+		<property name="postTime" />
+		<!-- author属性，本类User的多对一 -->
+		<many-to-one name="author"   class="User" column="authorId" />
+	</class>
+</hibernate-mapping>

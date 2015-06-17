@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN" "http://tuckey.org/res/dtds/urlrewrite3.0.dtd">
+<urlrewrite>
+	<rule>  
+        <from>^/noteImgUp/([0-9]+).html$</from>  
+        <to type="forward">up_imgUpload.action?pictime=$1</to>  
+    </rule>
+	<rule>  
+        <from>/ht.html</from>  
+        <to type="forward">manager/user_htLoginUI.action</to>  
+    </rule>
+	
+	<rule>  
+        <from>/index.html</from>  
+        <to type="forward">index.action</to>  
+    </rule> 
+   <rule>
+       	<from>^/news/([0-9]+).html$</from>
+       	<to type="forward">findArticleById.action?id=$1</to>
+   </rule>
+   <!-- 基地概况和科研状况 -->
+   <rule>
+       	<from>^/onelist/([0-9]+).html$</from>
+       	<to type="forward">onelist.action?type=$1</to>
+   </rule>
+   <!-- 基地概况和科研状况里面的list -->
+    <rule>
+       	<from>^/onelist2/([0-9]+)_([0-9]+).html$</from>
+       	<to type="forward">onelist.action?type=$1&amp;id=$2</to>
+   </rule>
+   <!-- 基地概况里面额行业资讯lists.action?type=${id} -->
+	 <rule>
+       	<from>^/consults/([0-9]+).html$</from>
+       	<to type="forward">lists.action?type=$1</to>
+   </rule>
+     <rule>
+       	<from>/dw.html</from>
+       	<to type="forward">dl_list.action</to>
+   </rule>
+   <!-- 其他栏目 -->
+   <rule>
+   		<from>^/lists/([0-9]+).html$</from>
+   		<to type="forward">lists.action?type=$1</to>
+   </rule>
+   <rule>
+   		<from>^/note/([0-9]+).html$</from>
+   		<to type="forward">frontnote_detail.action?model.id=$1</to>
+   </rule>
+</urlrewrite>

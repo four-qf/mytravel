@@ -1,0 +1,587 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+.topline{
+	width: auto;
+	min-width: 1000px;
+	height: 20px;
+	margin-top: 10px;
+	background-image: url("../formerImage/footerTopLineImage.png");
+}
+.main1{
+	width: 1000px;
+	min-height: 1032px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.main1 .left{
+	float: left;
+	width: 300px;
+	height: 992px;
+}
+.main1 .right{
+	float: left;
+	width: 700px;
+	min-height: 992px;
+}
+.main1 .left .module{
+	width: 300px;
+	height: 340px;
+	border-bottom: 1px solid #BABABA; 
+}
+.main1 .left .module .top{
+	width: 300px;
+	height: 35px;
+	text-indent: 2em;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	background-image: url("../formerImage/moduleTop.png");
+}
+.main1 .left .module .content{
+	width: 290px;
+	height: 290px;
+	margin-left: 10px;
+}
+.main1 .left .module .content ul{
+	color: #0070D1;
+	width: 320px;
+	height: 290px;
+	margin: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+.main1 .left .module .content ul li{
+	height: 25px;
+	line-height: 25px;
+}
+.main1 .left .module .content ul li img{
+	width: 20px;
+	height: 25px;
+	border: none;
+}
+.main1 .left .module .content ul li a{
+	position: absolute;
+	color: #333333;
+	text-align: left;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 25px;
+}
+.main1 .left .module .content ul li a:HOVER{
+	text-decoration: underline;
+}
+.main1 .left .tradeInfor{
+	width: 300px;
+	min-height: 195px;
+	border-bottom: 1px solid #BABABA;
+}
+.main1 .left .tradeInfor .top{
+	width: 300px;
+	height: 35px;
+	text-indent: 2em;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	background-image: url("../formerImage/moduleTop.png");
+}
+.main1 .left .tradeInfor ul{
+	width: 280px;
+	min-height: 160px;
+	margin-left: 10px;
+	background-image: url("../formerImage/tradeInfor.jpg");
+	margin-top: 5px;
+	padding-left: 0px;
+	list-style: none;
+	margin-bottom: 0px;
+}
+.main1 .left .tradeInfor ul li{
+	width: 280px;
+	height: 40px;
+}
+.main1 .left .tradeInfor ul li a{
+	float: left;
+	width: 200px;
+	height: 32px;
+	margin-bottom: 3px;
+	background-image: url("../formerImage/tradeTag.jpg");
+	text-align: center;
+	line-height: 32px;
+	text-decoration: none;
+	color: #333333;
+	font-size: 12px;
+	letter-spacing: 8px;
+	margin-left: 40px;
+}
+.main1 .left .tradeInfor ul li a:HOVER{
+	background-image: url("../formerImage/tradeTag2.jpg");
+}
+.main1 .right .position{
+	color: #1F286D;
+	width: 699px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-indent: 2em;
+	border-left: 1px solid #BABABA;
+}
+.main1 .right .position a{
+	color: #1F286D;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+.main1 .right .position a:HOVER{
+	color: #FF0000;
+}
+.main1 .right .substance{
+	width: 699px;
+	min-height: 962px;
+	border-left: 1px solid #BABABA;
+}
+.main1 .right .substance .top{
+	width: 640px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Garamond, serif;
+	margin-left: 29px;
+}
+.main1 .right .substance .authorTime{
+	color: #7E7E7E;
+	width: 640px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 29px;
+	background-image: url("../formerImage/authorTimeImage.png");
+}
+.main1 .right .substance .content{
+	width:660px;
+	min-height: 742px;
+	margin-left: 19px;
+	margin-top: 20px;
+	text-align: center;
+}
+.main1 .right .substance .content p{
+	text-indent: 2em;
+	margin-top: 10px;
+	text-align: left;
+}
+
+
+
+.main2{
+	width: 1000px;
+	height: 715px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.main2 .left{
+	float: left;
+	width: 300px;
+	height: 685px;
+}
+.main2 .right{
+	float: left;
+	width: 700px;
+	height: 685px;
+}
+.main2 .left .module{
+	width: 300px;
+	min-height: 290px;
+	border-bottom: 1px solid #BABABA; 
+}
+.main2 .left .module .top{
+	width: 300px;
+	height: 35px;
+	text-indent: 2em;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	background-image: url("../formerImage/moduleTop.png");
+}
+.main2 .left .module .content{
+	width: 290px;
+	min-height: 250px;
+	margin-left: 10px;
+}
+.main2 .left .module .content ul{
+	color: #0070D1;
+	width: 320px;
+	min-height: 250px;
+	margin: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+.main2 .left .module .content ul li img{
+	width: 20px;
+	height: 25px;
+	border: none;
+}
+.main2 .left .module .content ul li{
+	color: #000000;
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	font-size: 12px;
+}
+.main2 .left .module .content ul li a{
+	position: absolute;
+	color: #333333;
+	text-align: left;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 25px;
+}
+.main2 .left .module .content ul li a:HOVER{
+	text-decoration: underline;
+}
+.main2 .left .tradeInfor{
+	width: 300px;
+	min-height: 195px;
+	border-bottom: 1px solid #BABABA;
+}
+.main2 .left .tradeInfor .top{
+	width: 300px;
+	height: 35px;
+	text-indent: 2em;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	background-image: url("../img/bg_9.png");
+}
+.main2 .left .tradeInfor ul{
+	width: 280px;
+	min-height: 160px;
+	margin-left: 10px;
+	background-image: url("../formerImage/tradeInfor.jpg");
+	margin-top: 5px;
+	padding-left: 0px;
+	list-style: none;
+	margin-bottom: 0px;
+}
+
+
+.main2 .left .tradeInfor ul li{
+	width: 280px;
+	height: 40px;
+}
+.main2 .left .tradeInfor ul li a{
+	float: left;
+	width: 200px;
+	height: 32px;
+	margin-bottom: 3px;
+	background-image: url("../formerImage/tradeTag.jpg");
+	text-align: center;
+	line-height: 32px;
+	text-decoration: none;
+	color: #333333;
+	font-size: 12px;
+	letter-spacing: 8px;
+	margin-left: 40px;
+}
+.main2 .left .tradeInfor ul li a:HOVER{
+	background-image: url("../formerImage/tradeTag2.jpg");
+}
+.main2 .right .title{
+	color: #333333;
+	width: 699px;
+	height: 35px;
+	line-height: 30px;
+	font-weight: bold;
+	font-size: 16px;
+	border-left: 1px solid #BABABA;
+	border-bottom: 1px solid #BABABA;
+}
+.main2 .right .title img{
+	border: none;
+	float: left;
+}
+.main2 .right .title span{
+	float: left;
+}
+.main2 .right .list{
+	width: 699px;
+	height: 650px;
+	border-left: 1px solid #BABABA;
+}
+.main2 .right .list ul{
+	width: 699px;
+	height: 600px;
+	padding-left: 0px;
+	margin-top: 0px;
+	list-style: none;
+	margin-left: 0px;
+}
+.main2 .right .list ul li{
+	float: left;
+	width: 679px;
+	height: 29px;
+	border-bottom: 1px dashed #BABABA;
+	margin-left: 20px;
+	text-align: -webkit-match-parent;
+}
+.main2 .right .list ul li a{
+	color: #333333;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 29px;
+	float: left;
+}
+.main2 .right .list ul li a:HOVER{
+	color: #FF6600;
+}
+.main2 .right .list ul li span{
+	color: #333333;
+	float: right;
+	width: 100px;
+	height: 29px;
+	line-height: 29px;
+	text-align: right;
+	font-size: 12px;
+	white-space: nowrap;
+} 
+.main2 .right .list .page{
+	width: 370px;
+	height: 30px;
+	float: right;
+	line-height: 30px;
+	border-bottom: 1px dashed #BABABA;
+}
+.main2 .right .list .page .pageNumber{
+	width: 28px;
+	height: 20px;
+	border: 1px solid #BABABA;
+	text-align: center;
+	float: left;
+	margin-left: 7px;
+}
+.main2 .right .list .page .pageNumber1{
+	width: 20px;
+	height: 20px;
+	border: 1px solid #BABABA;
+	text-align: center;
+	float: left;
+	margin-left: 7px;
+}
+.main2 .right .list .page .pageNumber a,.main2 .right .list .page .pageNumber1 a{
+	color: #333333;
+	line-height: 20px;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+
+
+.main3{
+	width: 1000px;
+	min-height: 722px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.main3 .left{
+	position: absolute;
+	width: 300px;
+	min-height: 692px;
+}
+.main3 .right{
+	position: absolute;
+	width: 690px;
+	min-height: 712px;
+	margin-left: 300px;
+}
+
+/*
+.main1 .left .module{
+	width: 300px;
+	border-bottom: 1px solid #BABABA; 
+}
+.main1 .left .module .top{
+	width: 300px;
+	height: 35px;
+	text-indent: 2em;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	background-image: url("../formerImage/moduleTop.png");
+}
+.main1 .left .module .content{
+	width: 290px;
+	min-height: 250px;
+	margin-left: 10px;
+}
+.main1 .left .module .content ul{
+	color: #0070D1;
+	width: 320px;
+	margin: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+	border: 1px solid black;
+}
+
+.main1 .left .module .content ul li img{
+	width: 20px;
+	height: 25px;
+	border: none;
+}
+.main1 .left .module .content ul li{
+	color: #000000;
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	font-size: 12px;
+}
+.main1 .left .module .content ul li a{
+	position: absolute;
+	color: #333333;
+	text-align: left;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 25px;
+}
+.main1 .left .module .content ul li a:HOVER{
+	text-decoration: underline;
+}
+*/
+
+.main3 .left .module{
+	width: 300px;
+	border-bottom: 1px solid #BABABA; 
+}
+.main3 .left .module .top{
+	width: 300px;
+	height: 35px;
+	text-indent: 2em;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	background-image: url("../formerImage/moduleTop.png");
+	/* url("../img/bg_9.png");*/
+}
+.main3 .left .module .content{
+	width: 290px;
+	margin-left: 10px;
+}
+.main3 .left .module .content ul{
+	color: #0070D1;
+	width: 320px;
+	margin: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+.main3 .left .module .content ul li{
+	color: #000000;
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	font-size: 12px;
+}
+.main3 .left .module .content ul li img{
+	width: 20px;
+	height: 25px;
+	border: none;
+}
+.main3 .left .module .content ul li a{
+	position: absolute;
+	color: #333333;
+	text-align: left;
+	text-decoration: none;
+	font-size: 12px;
+	line-height: 25px;
+}
+
+.main3 .left .module .content ul li a:HOVER{
+	text-decoration: underline;
+}
+.main3 .left .tradeInfor{
+	width: 300px;
+	min-height: 195px;
+	border-bottom: 1px solid #BABABA;
+}
+.main3 .left .tradeInfor .top{
+	width: 300px;
+	height: 35px;
+	text-indent: 2em;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 30px;
+	background-image: url("../img/bg_9.png");
+}
+.main3 .left .tradeInfor ul{
+	width: 280px;
+	min-height: 160px;
+	margin-left: 10px;
+	background-image: url("../formerImage/tradeInfor.jpg");
+	margin-top: 5px;
+	padding-left: 0px;
+	list-style: none;
+	margin-bottom: 0px;
+}
+.main3 .left .tradeInfor ul li{
+	width: 280px;
+	height: 40px;
+}
+.main3 .left .tradeInfor ul li a{
+	float: left;
+	width: 200px;
+	height: 32px;
+	margin-bottom: 3px;
+	background-image: url("../formerImage/tradeTag.jpg");
+	text-align: center;
+	line-height: 32px;
+	text-decoration: none;
+	color: #333333;
+	font-size: 12px;
+	letter-spacing: 8px;
+	margin-left: 40px;
+}
+.main3 .left .tradeInfor ul li a:HOVER{
+	background-image: url("../formerImage/tradeTag2.jpg");
+}
+.main3 .right .position{
+	color: #0099FF;
+	width: 699px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+	border-left: 1px solid #BABABA;
+	text-align: center;
+	font-weight: bold;
+}
+.main3 .right .posButtom{
+	width: 699px;
+	height: 10px;
+	border-left: 1px solid #BABABA;
+}
+.main3 .right .posButtom .background{
+	width: 640px;
+	height: 10px;
+	margin-left: 30px;
+	background-image: url("../formerImage/authorTimeImage1.png");
+}
+.main3 .right .substance{
+	width: 699px;
+	min-height: 662px;
+	border-left: 1px solid #BABABA;
+}
+.main3 .right .substance .content{
+	width:660px;
+	min-height: 542px;
+	margin-left: 19px;
+	padding-top: 20px;
+	text-align: center;
+}
+.main3 .right .substance .content p{
+	text-indent: 2em;
+	margin-top: 10px;
+	text-align: left;
+}

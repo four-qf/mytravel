@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tour.suse.entity" >
+
+	<class name="ScenicClass" table="ScenicClass" >
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="name" />
+	
+		<!-- children属性，本类与ScenicClass的一对多 -->
+		<set name="children" lazy="false">
+			<key column="parentId"> </key>
+			<one-to-many class="ScenicClass"/>
+		</set>
+		<!-- parent属性，本类与ScenicClass的多对一 -->
+		<many-to-one name="parent"  class="ScenicClass" column="parentId" />
+		<!-- scenices属性，本类与Scenic多对多 -->
+		<set name="scenices" table="zhu_scenic_scenicClass"  cascade="all">
+			<key column="scenicClassId"></key><!-- 外键 -->
+			<many-to-many class="Scenic" column="scenicId" />
+		</set>
+	</class>
+</hibernate-mapping>

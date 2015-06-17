@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tour.suse.entity" >
+
+	<class name="Scenic" table="Scenic" >
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="name" length="20" />
+		<property name="level" length="16" />
+		<property name="realCommentNum"  type="integer" not-null="true"/>
+		<property name="description" length="65532" />
+		<property name="imageUrl" length="550"  />
+		<property name="clickNum" length="10" type="integer" not-null="true"/>
+		<property name="commentNum" length="10" type="integer" not-null="true"/>
+		<property name="postTime" />
+		<property name="scenicLine" length="65532" />
+		<property name="totalScore"  not-null="true" />
+		<property name="peopleScore" not-null="true"/>
+		<property name="serviceScore"  not-null="true"/>
+		<property name="status" type="integer" not-null="true" />
+		<property name="environmentScore" not-null="true" />
+		<property name="transportScore"  not-null="true" />
+		
+		<!-- scenicComments属性，本类与scenicComment的一对多 -->
+		<set name="scenicComments" cascade="all">
+			<key column="scenicId"></key><!-- 外键 -->
+			<one-to-many class="ScenicComment"/>
+		</set>
+		
+		<!-- notes属性，本类与Note的一对多 -->
+		<set name="notes" >
+			<key column="scenicId"></key><!-- 外键 -->
+			<one-to-many class="Note"/>
+		</set>
+		
+		
+		<!-- city属性，本类与City的多对一 -->
+		<many-to-one name="city"  class="City" column="cityId" />
+		<!-- author属性，本类User的多对一 -->
+		<many-to-one name="author"   class="User" column="authorId" />
+		<!-- scenicClasses属性，本类与ScenicClass多对多 -->
+		<set name="scenicClasses" table="zhu_scenic_scenicClass" >
+			<key column="scenicId"></key><!-- 外键 -->
+			<many-to-many class="ScenicClass" column="scenicClassId" />
+		</set>
+		
+		
+	</class>
+</hibernate-mapping>

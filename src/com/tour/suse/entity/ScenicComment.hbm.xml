@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tour.suse.entity" >
+
+	<class name="ScenicComment" table="ScenicComment" >
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="title" />
+		<property name="content" length="300"/>
+		<property name="postTime" />
+		<property name="serviceNum"  not-null="true"/>
+		<property name="peopNum"  not-null="true" />
+		<property name="totalNum" not-null="true"/>
+		<property name="status" type="integer" not-null="true"/>
+		<property name="environmentNum"  not-null="true" />
+		<property name="transportNum"  not-null="true" />
+		<!-- author属性，本类与User的多对一 -->
+		<many-to-one name="author"  class="User" lazy="false" column="authorId" />
+		
+		<!-- scenic属性，本类与Scenic的多对一 -->
+		<many-to-one name="scenic"  class="Scenic" column="scenicId"  />
+	</class>
+</hibernate-mapping>

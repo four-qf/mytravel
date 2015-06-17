@@ -1,0 +1,559 @@
+body{
+	padding: 0px;
+	margin: 0px;
+}
+img{
+	border: none;
+}
+.mainBody{
+	width: 1000px;
+	height: 1500px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10px;
+}
+.mainBody .divFirst{
+	width: 1000px;
+	height: 330px;
+}
+.mainBody .adImageView{
+	position: relative;
+	float: left;
+	width: 660px;
+	height: 330px;
+	overflow: hidden;
+}
+.mainBody .scenicSpots{
+	float: left;
+	width: 318px;
+	height: 328px;
+	margin-left: 20px;
+}
+.mainBody .divSecond{
+	width: 1000px;
+	height: 330px;
+	margin-top: 15px;
+}
+.mainBody .openFund{
+	float: left;
+	width: 320px;
+	height: 330px;
+}
+.mainBody .baseDynamic{
+	float: left;
+	width: 660px;
+	height: 330px;
+	margin-left: 20px;
+}
+.mainBody .rollAd{
+	position: relative;
+	width: 1000px;
+	height: 100px;
+	margin-top: 15px;
+	overflow: hidden;
+}
+.mainBody .wisdomInform{
+	float: left;
+	width: 320px;
+	height: 330px;
+}
+.mainBody .tourismDynamic{
+	float: left;
+	width: 320px;
+	height: 330px;
+	margin-left: 20px;
+}
+.mainBody .downloadCenter{
+	float: left;
+	width: 320px;
+	height: 330px;
+	margin-left: 20px;
+}
+.mainBody .specialActivities{
+	float: left;
+	width: 320px;
+	height: 330px;
+}
+.mainBody .industryDynamics{
+	float: left;
+	width: 320px;
+	height: 330px;
+	margin-left: 20px;
+}
+.mainBody .tourPalBlogs{
+	float: left;
+	width: 320px;
+	height: 330px;
+	margin-left: 20px;
+}
+.adImageView .backgroundImage{
+	position: absolute;
+	width: 3300px;
+	height: 330px;
+	left: 0px;
+}
+.adImageView .backgroundImage a{
+	width: 660px;
+	height: 330px;
+	float: left;
+}
+.adImageView .backgroundImage a img{
+	width: 660px;
+	height: 330px;
+}
+.adImageView .left{
+	position: absolute;
+	width: 50px;
+	height: 80px;
+	margin-left: 0px;
+	margin-top: 105px;
+}
+.adImageView .left img{
+	width: 50px;
+	height: 80px;
+	filter:alpha(opacity=40);
+	border: none;
+	opacity:0.4;
+}
+.adImageView .left img:HOVER{
+	filter:alpha(opacity=80);
+	opacity:0.8;
+	border: none;
+}
+.adImageView .right{
+	position: absolute;
+	width: 50px;
+	height: 80px;
+	margin-top: 105px;
+	margin-left: 610px;
+}
+.adImageView .right img{
+	width: 50px;
+	height: 80px;
+	filter:alpha(opacity=40);
+	border: none;
+	opacity:0.4;
+}
+.adImageView .right img:HOVER{
+	filter:alpha(opacity=80);
+	opacity:0.8;
+	border: none;
+}
+.adImageView .buttom{
+	position: absolute;
+	width: 660px;
+	height: 40px;
+	filter:alpha(opacity=70);
+	margin-top: 290px;
+	background: #000000;
+	opacity:0.7;
+}
+.adImageView .buttom .text{
+	position: absolute;
+	width: 400px;
+	height: 40px;
+	z-index: 9999;
+}
+.adImageView .buttom .text a{
+	position: absolute;
+	color: #909090;
+	width: 370px;
+	height: 40px;
+	text-decoration: none;
+	text-align: left;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin-left: 30px;
+	display: none;
+}
+.adImageView .buttom .circle{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	margin-top: 12px;
+}
+.adImageView .buttom .circle img{
+	width: 15px;
+	height: 15px;
+	border: none;
+}
+.baseDynamic .topLine{
+	width: 660px;
+	height: 2px;
+	background: #458FCE;
+}
+.baseDynamic .topTitle{
+	width: 660px;
+	height: 27px;
+	background: #FBFBFB;
+}
+.baseDynamic .topTitle a{
+	color: #333333;
+	text-decoration: none;
+	line-height: 27px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.baseDynamic .topTitle a:HOVER{
+	text-decoration: underline;
+}
+.baseDynamic .content{
+	width: 660px;
+	height: 300px;
+}
+.baseDynamic .content ul{
+	color: #0070D1;
+	width: 660px;
+	height: 300px;
+	margin: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+.baseDynamic .content ul li{
+	float: left;
+	width: 660px;
+	height: 24px;
+	border-bottom: 1px dashed #BABABA;
+	padding-bottom: 0px;
+}
+.baseDynamic .content ul li img{
+	float: left;
+	width: 20px;
+	height: 24px;
+	border: none;
+}
+.baseDynamic .content ul li a{
+	float: left;
+	color: #333333;
+	text-align: left;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 24px;
+}
+.baseDynamic .content ul li a:HOVER{
+	text-decoration: underline;
+}
+.baseDynamic .content ul li span{
+	float: right;
+	color: #333333;
+	width: 90px;
+	height: 24px;
+	text-align: right;
+	line-height: 24px;
+	font-size: 12px;
+	white-space: nowrap;
+}
+.openFund .topLine{
+	width: 320px;
+	height: 2px;
+	background: #458FCE;
+}
+.openFund .topTitle{
+	width: 320px;
+	height: 27px;
+	background: #FBFBFB;
+}
+.openFund .topTitle a{
+	color: #333333;
+	text-decoration: none;
+	line-height: 27px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.openFund .topTitle a:HOVER{
+	text-decoration: underline;
+}
+.openFund .content{
+	width: 320px;
+	height: 300px;
+}
+.openFund .content ul{
+	color: #0070D1;
+	width: 320px;
+	height: 300px;
+	margin: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+.openFund .content ul li{
+	float: left;
+	width: 320px;
+	height: 24px;
+	border-bottom: 1px dashed #BABABA;
+	padding: 0px;
+}
+.openFund .content ul li img{
+	float: left;
+	width: 20px;
+	height: 24px;
+	border: none;
+}
+.openFund .content ul li a{
+	float: left;
+	color: #333333;
+	text-align: left;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 24px;
+}
+.openFund .content ul li a:HOVER{
+	text-decoration: underline;
+}
+.openFund .content ul li span{
+	float: right;
+	color: #333333;
+	width: 40px;
+	height: 24px;
+	text-align: right;
+	line-height: 24px;
+	font-size: 12px;
+	white-space: nowrap;
+}
+.scenicSpots .top{
+	width: 320px;
+	height: 27px;
+	background: #FFFDEE;
+}
+.scenicSpots .top .title{
+	position: absolute;
+	width: 300px;
+	height: 27px;
+	margin-left: 18px;
+}
+.scenicSpots .top .title a{
+	text-decoration: none;
+	line-height: 27px;
+	color: #333333;
+	font-weight: bold;
+}
+.scenicSpots .top .title a:HOVER{
+	text-decoration: underline;
+}
+.scenicSpots .level{
+	width: 318px;
+	height: 47px;
+}
+.scenicSpots .level .name{
+	position: absolute;
+	width: 27px;
+	height: 42px;
+	color: #0070D1;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 5px;
+}
+.scenicSpots .level .content{
+	position: absolute;
+	width: 288px;
+	height: 46px;
+	margin-left: 30px;
+	border-bottom: 1px dashed #FFE88F;
+}
+.scenicSpots .level .content a{
+	color: #333333;
+	width: 96px;
+	height: 23px;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	line-height: 23px;
+	font-size: 12px;
+}
+.scenicSpots .level .content a:HOVER{
+	text-decoration: underline;
+}
+.scenicSpots .classification{
+	width: 318px;
+	height: 106px;
+}
+.scenicSpots .classification .name{
+	position: absolute;
+	width: 27px;
+	height: 68px;
+	color: #0070D1;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 38px;
+}
+.scenicSpots .classification .content{
+	position: absolute;
+	width: 288px;
+	height: 105px;
+	margin-left: 30px;
+	border-bottom: 1px dashed #FFE88F;
+}
+.scenicSpots .classification .content a{
+	color: #333333;
+	width: 94px;
+	height: 21px;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	line-height: 21px;
+	font-size: 12px;
+	overflow: hidden;
+}
+.scenicSpots .classification .content a:HOVER{
+	text-decoration: underline;
+}
+.scenicSpots .geographicPosition{
+	width: 318px;
+	height: 147px;
+}
+.scenicSpots .geographicPosition .name{
+	position: absolute;
+	width: 27px;
+	height: 117px;
+	color: #0070D1;
+	text-align: center;
+	line-height: 20px;
+	font-weight: bold;
+	padding-top: 30px;
+}
+.scenicSpots .geographicPosition .content{
+	position: absolute;
+	width: 288px;
+	height: 147px;
+	margin-left: 30px;
+	border-bottom: 1px dashed #FFE88F;
+}
+.scenicSpots .geographicPosition .content a{
+	color: #333333;
+	width: 96px;
+	height: 21px;
+	float: left;
+	text-decoration: none;
+	text-align: center;
+	line-height: 21px;
+	font-size: 12px;
+}
+.scenicSpots .geographicPosition .content a:HOVER{
+	text-decoration: underline;
+}
+.publicTopLine{
+	width: 320px;
+	height: 2px;
+	background: #458FCE;
+}
+.publicTopTitle{
+	width: 320px;
+	height: 27px;
+	background: #FBFBFB;
+}
+.publicTopTitle a{
+	color: #333333;
+	text-decoration: none;
+	line-height: 27px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.publicTopTitle a:HOVER{
+	text-decoration: underline;
+}
+.publicContent1{
+	width: 320px;
+	height: 300px;
+}
+.publicContent1 ul{
+	width: 320px;
+	height: 300px;
+	margin-left: 0px;
+	background-image: url("../formerImage/tradeInfor1.jpg");
+	margin-top: 5px;
+	padding-left: 0px;
+	list-style: none;
+	margin-bottom: 0px;
+}
+.publicContent1 ul li{
+	width: 320px;
+	height: 50px;
+	padding-top: 10px;
+}
+.publicContent1 ul li a{
+	float: left;
+	width: 240px;
+	height: 38px;
+	margin-bottom: 3px;
+	background-image: url("../formerImage/tradeTag3.jpg");
+	text-align: center;
+	line-height: 38px;
+	text-decoration: none;
+	color: #333333;
+	font-size: 12px;
+	letter-spacing: 10px;
+	margin-left: 37px;
+}
+.publicContent1 ul li a:HOVER{
+	background-image: url("../formerImage/tradeTag4.jpg");
+}
+.publicContent{
+	width: 320px;
+	height: 300px;
+}
+.publicContent ul{
+	color: #0070D1;
+	width: 320px;
+	height: 300px;
+	margin: 0px;
+	padding-left: 0px;
+	list-style-type: none;
+}
+.publicContent ul li{
+	float: left;
+	width: 320px;
+	height: 24px;
+	border-bottom: 1px dashed #BABABA;
+	padding: 0px;
+}
+.publicContent ul li img{
+	float: left;
+	width: 20px;
+	height: 24px;
+	border: none;
+}
+.publicContent ul li a{
+	float: left;
+	color: #333333;
+	text-align: left;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 24px;
+}
+.publicContent ul li a:HOVER{
+	text-decoration: underline;
+}
+.publicContent ul li span{
+	float: right;
+	color: #333333;
+	width: 40px;
+	height: 24px;
+	text-align: right;
+	line-height: 24px;
+	font-size: 12px;
+	white-space: nowrap;
+}
+.rollAd .allContent{
+	width: 1000px;
+	height: 98px;
+	border-bottom: 1px dashed #0070D1;
+	border-top: 1px dashed #0070D1;
+}
+.rollAd .allContent .background{
+	position: absolute;
+	width: 2030px;
+	height: 98px;
+	left: 0px;
+}
+.rollAd .allContent .background .adImage{
+	width: 203px;
+	height: 90px;
+	float: left;
+	margin-top: 4px;
+}
+.rollAd .allContent .background .adImage img{
+	width: 188px;
+	height: 90px;
+	border: none;
+}

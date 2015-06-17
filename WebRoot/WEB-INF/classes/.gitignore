@@ -1,0 +1,16 @@
+/applicationContext.xml
+/com/
+/hibernate.cfg.xml
+/jdbc.properties
+/keyword.properties
+/log4j.properties
+/org/
+/struts-fileup.xml
+/struts-manager.xml
+/struts-news.xml
+/struts-note.xml
+/struts-scenic.xml
+/struts.xml
+/upload/
+/words.properties
+/zhu/

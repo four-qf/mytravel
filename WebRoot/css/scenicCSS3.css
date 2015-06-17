@@ -1,0 +1,46 @@
+ul#queBkgrd li{
+	perspective: 600px;
+	-webkit-perspective: 600px;
+	transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+}
+ul#queBkgrd .reduce{
+	animation: reduce 1s ease;
+	-webkit-animation: reduce 1s ease;
+}
+@keyframes reduce{
+	from{
+		transform: scale(0.5,0.5);
+	}
+	to{
+		transform: scale(1,1);
+	}
+}
+@-webkit-keyframes reduce{
+	from{
+		-webkit-transform: scale(0.5,0.5);
+	}
+	to{
+		-webkit-transform: scale(1,1);
+	}
+}
+ul#queBkgrd .add{
+	animation: add 1s ease;
+	-webkit-animation: add 1s ease;
+}
+@keyframes add{
+	from{
+		transform: scaleX(0);
+	}
+	to{
+		transform: scaleX(1);
+	}
+}
+@-webkit-keyframes add{
+	from{
+		-webkit-transform: scaleX(0);
+	}
+	to{
+		-webkit-transform: scaleX(1);
+	}
+}

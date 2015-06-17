@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tour.suse.entity" >
+	<class name="User" table="tb_user" >
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<!-- 
+		private String username;
+	private String password;
+	private String email;
+	private String nickName;
+	private String head;
+	private String realName;
+	private char gender;
+	private Date birthDay;
+	private String cityName;
+	private String phoneNumber;
+	private String profile;
+	private Date createdate;
+	private Date lastLoginTime;
+	private long logincount;
+	private boolean isactivity;
+	//
+	private Set<Role> roles  = new HashSet<Role>();
+		 -->
+		<property name="username" />
+		<property name="password" />
+		
+		<property name="email" />
+		<property name="nickName" />
+		<property name="head" />
+		<property name="realName" />
+		<property name="gender" />
+		<property name="birthDay" />
+		<property name="cityName" />
+		<property name="phoneNumber" />
+		<property name="profile" length="6663"  />
+	
+		<property name="createdate" />
+		<property name="lastLoginTime" />
+		<property name="logincount" />
+		<!-- roles属性，本类与Role的多对多 -->
+		<set name="roles" table="suse_user_role" lazy="false">
+			<key column="userId"></key>
+			<many-to-many class="Role" column="roleId"></many-to-many>
+		</set>
+		<!-- notes属性，本类与Note的多对多 -->
+		<set name="notes"  cascade="delete">
+			<key column="userId"></key><!-- 外键 -->
+			<one-to-many class="Note"/>
+		</set>
+		
+		<!-- notes属性，本类与Note的多对多 -->
+		<set name="scenicComments"  cascade="delete">
+			<key column="userId"></key><!-- 外键 -->
+			<one-to-many class="ScenicComment"/>
+		</set>
+	</class>
+
+</hibernate-mapping>
